@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui -> setupUi(this);
 
-    //Configuración de los pushButtons de la ventana principal para que se pueda detectar cuando el cursos pasa sobre ellos.
+    // Configuración de los pushButtons de la ventana principal para que se pueda detectar cuando el cursos pasa sobre ellos.
     ui -> pushButtonJuego -> setAttribute(Qt::WA_Hover);
     ui -> pushButtonJuego -> installEventFilter(this);
 
@@ -26,8 +26,8 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//Método que define las reacciones a ejecutar cuando se pasa por encima de alguno de los botones de la ventana.
-//Según sea el botón sobre el que se está pasando, un mensaje distinto se muestra en label2.
+/* Método que define las reacciones a ejecutar cuando se pasa por encima de alguno de los botones de la ventana.
+Según sea el botón sobre el que se está pasando, un mensaje distinto se muestra en label2. */
 bool MainWindow::eventFilter(QObject* obj, QEvent *event)
 {
     if (obj == ui -> pushButtonJuego) {

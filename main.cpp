@@ -6,7 +6,7 @@
 
 int main(int argc, char* argv[])
 {
-    //Se declara y construye el objeto que representa a la aplicación misma.
+    // Se declara y construye el objeto que representa a la aplicación misma.
     QApplication a(argc, argv);
 
     QTranslator translator;
@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
         }
     }
 
-    //Declaración y despliegue visual de la ventana principal de la aplicación.
+    // Declaración y despliegue visual de la ventana principal de la aplicación.
     MainWindow w;
     w.show();
     return a.exec();
