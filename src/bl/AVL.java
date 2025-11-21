@@ -153,21 +153,20 @@ public class AVL {
         } else if (llaveEliminar > nodo.getLlave()) {
             nodo.setHijoDerecho(eliminarNodo(nodo.getHijoDerecho(), llaveEliminar));
         } else {
-            // Nodo sin hijos.
             if (nodo.getHijoIzquierdo() == null && nodo.getHijoDerecho() == null) {
+                // Nodo sin hijos.
                 return null;
-            }
-
-            // Nodo con un solo hijo.
-            if (nodo.getHijoIzquierdo() == null) {
+            } else if (nodo.getHijoIzquierdo() == null) {
+                // Nodo con sólo hijo derecho.
                 return nodo.getHijoDerecho();
             } else if (nodo.getHijoDerecho() == null) {
+                // Nodo con sólo hijo izquierdo.
                 return nodo.getHijoIzquierdo();
+            } else {
+                // Nodo con dos hijos.
+                NodoAVL sucesor = getSucesor(nodo);
+                nodo = reemplazarSucesor(nodo, sucesor);
             }
-
-            // Nodo con dos hijos.
-            NodoAVL sucesor = getSucesor(nodo);
-            nodo = reemplazarSucesor(nodo, sucesor);
         }
 
         // Actualizar altura del nodo después de eliminar.
