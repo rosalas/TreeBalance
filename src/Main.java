@@ -12,5 +12,7 @@ public class Main {
         PasosJuego.intro();
 
         PasosJuego.espacio();
+
+        PasosJuego.explicarABB();
     }
 }

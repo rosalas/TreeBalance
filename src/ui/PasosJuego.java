@@ -49,4 +49,28 @@ public class PasosJuego {
             System.out.println();
         }
     }
+
+    public static void explicarABB() {
+        System.out.println("Antes que nada, es importante conocer los árboles\n" +
+                "binarios de búsqueda o ABBs. Un ABB es una estructura\n" +
+                "de datos que permite almacenar información de forma\n" +
+                "ordenada, garantizando eficiencia en operaciones de\n" +
+                "inserción, búsqueda y eliminación.\n\n" +
+                "Todo ABB debe obedecer las siguientes reglas:\n\n" +
+                "1) Cada uno de sus nodos (es decir, los elementos que\n" +
+                "almacena) debe tener una llave única e irrepetible.\n" +
+                "Los nodos de un ABB pueden representar cualquier entidad\n" +
+                "que se requiere almacenar y gestionar en un programa.\n" +
+                "La llave suele ser un número o cadena alfanumérica.\n" +
+                "2) Cada nodo del árbol puede tener máximo dos enlaces\n" +
+                "a otros nodos: su hijo izquierdo y su hijo derecho.\n" +
+                "3) La llave de cada nodo debe ser mayor que la de su\n" +
+                "hijo izquierdo y menor que la de su hijo derecho\n" +
+                "(si los tiene). Un nodo puede tener uno o dos hijos\n" +
+                "nulos o vacíos.\n" +
+                "4) No puede haber redundancia de caminos (o sea, debe\n" +
+                "haber un único camino desde cualquier nodo hasta cualquier otro.)\n\n" +
+                "¿Lo entiendes? \uD83D\uDE04\n" +
+                "(Presiona la tecla Enter para ver un ejemplo gráfico)");
+    }
 }
