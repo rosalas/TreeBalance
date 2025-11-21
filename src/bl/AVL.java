@@ -1,3 +1,10 @@
+package bl;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class AVL {
 
     //Atributos.
@@ -173,5 +180,57 @@ public class AVL {
     // Método público para eliminar un nodo.
     public void eliminar(int llaveEliminar) {
         raiz = eliminarNodo(raiz, llaveEliminar);
+    }
+
+    // Imprimir árbol en la consola en forma de pirámide.
+    public void imprimirArbolPiramide() {
+        if (raiz == null) {
+            System.out.println("El árbol está vacío.\n");
+            return;
+        }
+
+        int altura = raiz.getAltura();
+
+        Queue<NodoAVL> colaNodos = new LinkedList<>();
+        colaNodos.add(raiz);
+
+        for (int nivel = 1; nivel <= altura; nivel++) {
+            int nodosNivel = (int) Math.pow(2, nivel - 1);
+
+            // Espacios antes de imprimir el primer nodo.
+            int espacioInicial = (int) Math.pow(2, altura - nivel) - 1;
+
+            // Espacios entre nodos.
+            int espacio = (int) Math.pow(2, altura - nivel + 1) - 1;
+
+            // Imprimir espacios iniciales.
+            for (int i = 0; i < espacioInicial; i++) {
+                System.out.print("   ");
+            }
+
+            // Imprimir todos los nodos del nivel actual.
+            List<NodoAVL> siguientes = new ArrayList<>();
+            for (int i = 0; i < nodosNivel; i++) {
+                NodoAVL nodo = colaNodos.poll();
+                if (nodo != null) {
+                    System.out.printf("%3d", nodo.getLlave());
+                    siguientes.add(nodo.getHijoIzquierdo());
+                    siguientes.add(nodo.getHijoDerecho());
+                } else {
+                    System.out.print("   ");
+                    siguientes.add(null);
+                    siguientes.add(null);
+                }
+
+                // Imprimir espacios entre nodos.
+                for (int j = 0; j < espacio; j++) {
+                    System.out.print("   ");
+                }
+            }
+            System.out.println();
+
+            // Preparar la siguiente fila del árbol.
+            colaNodos.addAll(siguientes);
+        }
     }
 }
