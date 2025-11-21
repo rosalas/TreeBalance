@@ -7,16 +7,16 @@ import java.util.Queue;
 
 public class AVL {
 
-    //Atributos.
+    // Atributos.
     private NodoAVL raiz;
 
-    //Métodos.
-    //Constructor.
+    // Métodos.
+    // Constructor.
     public AVL() {
         raiz = null;
     }
 
-    public boolean estaVacio() {
+    private boolean estaVacio() {
         return raiz == null;
     }
 

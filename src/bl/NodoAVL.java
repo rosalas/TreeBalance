@@ -36,6 +36,10 @@ public class NodoAVL {
     }
 
     // Setters.
+    public void setLlave(int llave) {
+        this.llave = llave;
+    }
+
     public void setHijoIzquierdo(NodoAVL hijoIzquierdo) {
         this.hijoIzquierdo = hijoIzquierdo;
     }
