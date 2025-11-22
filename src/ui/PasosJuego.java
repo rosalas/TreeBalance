@@ -109,7 +109,7 @@ public class PasosJuego {
         System.out.println("\n");
         arbolEjemplo.imprimirArbolPiramide();
         System.out.print("\n\n¿Ves cómo el árbol generado respeta todas las reglas de un ABB? \uD83D\uDC9A\n" +
-                "(Presiona la tecla Enter para continuar aprendiendo)");
+                "(Presiona la tecla Enter para practicar lo aprendido)");
         entrada.readLine();
         esperar(5);
     }
@@ -196,14 +196,14 @@ public class PasosJuego {
                 "llaves: 10, 20, 30, 5, 25, 35 y 15.\n" +
                 "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
         entrada.readLine();
-        ABB arbolDesbalance = new ABB();
-        arbolDesbalance.insertar(10);
-        arbolDesbalance.insertar(20);
-        arbolDesbalance.insertar(30);
-        arbolDesbalance.insertar(5);
-        arbolDesbalance.insertar(25);
-        arbolDesbalance.insertar(35);
-        arbolDesbalance.insertar(15);
+        ABB arbolEjemplo = new ABB();
+        arbolEjemplo.insertar(10);
+        arbolEjemplo.insertar(20);
+        arbolEjemplo.insertar(30);
+        arbolEjemplo.insertar(5);
+        arbolEjemplo.insertar(25);
+        arbolEjemplo.insertar(35);
+        arbolEjemplo.insertar(15);
         for (int c = 2; c >= 0; --c) {
             try {
                 Thread.sleep(1000);
@@ -214,7 +214,7 @@ public class PasosJuego {
         }
         esperar(1);
         System.out.println("\n");
-        arbolDesbalance.imprimirArbolPiramide();
+        arbolEjemplo.imprimirArbolPiramide();
         System.out.print("\n\n¿Notaste que las llaves utilizadas en este segundo\n" +
                 "árbol fueron las mismas que en el primero? \uD83D\uDD75\uFE0F\u200D♂\uFE0F\uD83D\uDD75\uFE0F\u200D♀\uFE0F\n" +
                 "Sin embargo, el árbol resultante es muy distinto en ambos casos.\n" +
@@ -261,6 +261,8 @@ public class PasosJuego {
                 "de 0.\n" +
                 "➡\uFE0F En todo árbol binario de búsqueda, la raíz es siempre\n" +
                 "el nodo con mayor altura.\n" +
+                "➡\uFE0F La altura de cualquier nodo debe ser igual o mayor que 0\n" +
+                "(es decir, no hay alturas negativas).\n" +
                 "(Presiona la tecla Enter para ver un ejemplo)");
         entrada.readLine();
         esperar(5);
@@ -271,14 +273,14 @@ public class PasosJuego {
                 "anterior \uD83D\uDC40\n" +
                 "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
         entrada.readLine();
-        ABB arbolDesbalance = new ABB();
-        arbolDesbalance.insertar(10);
-        arbolDesbalance.insertar(20);
-        arbolDesbalance.insertar(30);
-        arbolDesbalance.insertar(5);
-        arbolDesbalance.insertar(25);
-        arbolDesbalance.insertar(35);
-        arbolDesbalance.insertar(15);
+        ABB arbolEjemplo = new ABB();
+        arbolEjemplo.insertar(10);
+        arbolEjemplo.insertar(20);
+        arbolEjemplo.insertar(30);
+        arbolEjemplo.insertar(5);
+        arbolEjemplo.insertar(25);
+        arbolEjemplo.insertar(35);
+        arbolEjemplo.insertar(15);
         for (int c = 2; c >= 0; --c) {
             try {
                 Thread.sleep(1000);
@@ -289,7 +291,7 @@ public class PasosJuego {
         }
         esperar(1);
         System.out.println("\n");
-        arbolDesbalance.imprimirArbolPiramide();
+        arbolEjemplo.imprimirArbolPiramide();
         System.out.print("\n\nComo se puede ver, llegar a una hoja desde la raíz\n" +
                 "implica un camino de sólo dos nodos si se hace\n" +
                 "por la izquierda, mientras que por la derecha sería\n" +
@@ -301,27 +303,27 @@ public class PasosJuego {
                 "La altura del nodo 20 es de 3 y la del nodo 30 es 2.\n" +
                 "La altura de los nodos 5, 15, 25 y 35, al ser todos\n" +
                 "hojas, es de 1.\n" +
-                "(Presiona la tecla Enter para continuar aprendiendo)");
+                "(Presiona la tecla Enter para practicar lo aprendido)");
         entrada.readLine();
         esperar(5);
     }
 
-    public static void ejemploAutobalance() throws IOException {
-        System.out.print("\nVamos a construir un ABB desbalanceado \uD83D\uDE1F con las siguientes\n" +
-                "llaves: 10, 20, 30, 5, 25, 35 y 15.\n" +
-                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+    public static void ejerciciosAltura() throws IOException {
+        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de ABBs \uD83C\uDFCB\uFE0F\n\n" +
+                "¿Estás list@ para un ejercicio? \uD83D\uDC40\n" +
+                "(Presiona la tecla Enter para comenzar)");
         entrada.readLine();
-        ABB arbolDesbalance = new ABB();
-        arbolDesbalance.insertar(10);
-        arbolDesbalance.insertar(20);
-        arbolDesbalance.insertar(30);
-        arbolDesbalance.insertar(5);
-        arbolDesbalance.insertar(25);
-        arbolDesbalance.insertar(35);
-        arbolDesbalance.insertar(15);
+        ABB arbolEjercicios = new ABB();
+        arbolEjercicios.insertar(70);
+        arbolEjercicios.insertar(60);
+        arbolEjercicios.insertar(90);
+        arbolEjercicios.insertar(40);
+        arbolEjercicios.insertar(80);
+        arbolEjercicios.insertar(100);
+        arbolEjercicios.insertar(85);
         for (int c = 2; c >= 0; --c) {
             try {
-                Thread.sleep(1000); // 2000 milliseconds = 2 seconds
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 System.out.println("Lo sentimos, sucedió algo inesperado.");
             }
@@ -329,15 +331,149 @@ public class PasosJuego {
         }
         esperar(1);
         System.out.println("\n");
-        arbolDesbalance.imprimirArbolPiramide();
-        System.out.print("\n\n¿Notaste que las llaves utilizadas en este segundo\n" +
-                "árbol fueron las mismas que en el primero? \uD83D\uDD75\uFE0F\u200D♂\uFE0F\uD83D\uDD75\uFE0F\u200D♀\uFE0F\n" +
-                "Sin embargo, el árbol resultante es muy distinto en ambos casos.\n" +
-                "En efecto, los ABBs son sensibles al orden de inserción:\n" +
-                "las mismas llaves insertadas en órdenes distintos generan\n" +
-                "árboles distintos. \uD83C\uDF33\uD83C\uDF32\uD83C\uDF34\n" +
+        arbolEjercicios.imprimirArbolPiramide();
+        int respuesta;
+        while (true) {
+            System.out.print("\nPregunta 1: ¿Cuál de las siguientes llaves pertenece\n" +
+                    "a un nodo de altura 1?\n\n" +
+                    "1) 90\n" +
+                    "2) 70\n" +
+                    "3) 60\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 3) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        while (true) {
+            System.out.print("\nPregunta 2: ¿Cuál es la altura del nodo de llave 100?\n\n" +
+                    "1) 1\n" +
+                    "2) 0\n" +
+                    "3) 2\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 1) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+    }
+
+    public static void explicarFB() throws IOException {
+        System.out.print("\n\n\uD83D\uDCBB Factor de balance \uD83D\uDCBB\n\n" +
+                "Ahora que conocemos el concepto de altura, podemos\n" +
+                "definir el factor de balance. El FB de un nodo equivale a la\n" +
+                "diferencia entre la altura de su hijo izquierdo y la de\n" +
+                "su hijo derecho \uD83D\uDE04\n\n" +
+                "FB = h_izquierda - h_derecha\n\n" +
+                "Como se calcula mediante la resta de números que siempre son" +
+                "(Presiona la tecla Enter para practicar lo aprendido)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void ejemploFB() throws IOException {
+        System.out.print("\nVamos a construir un ABB con las siguientes llaves:\n" +
+                "50, 20, 80, 15, 25, 90, 10 y 85.\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        ABB arbolEjemplo = new ABB();
+        arbolEjemplo.insertar(50);
+        arbolEjemplo.insertar(20);
+        arbolEjemplo.insertar(80);
+        arbolEjemplo.insertar(15);
+        arbolEjemplo.insertar(25);
+        arbolEjemplo.insertar(90);
+        arbolEjemplo.insertar(10);
+        arbolEjemplo.insertar(85);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nEn el árbol anterior, como la raíz tiene un hijo izquierdo\n" +
+                "de altura 3 y un hijo derecho de altura 3, se puede decir que la raíz tiene\n" +
+                "un FB de 0 (es decir, está perfectamente balanceado \uD83D\uDC4D)\n" +
+                "El nodo de llave 80, por otra parte, tiene un FB de -2 (es decir, está\n" +
+                "desbalanceado hacia la derecha), mientras que el de llave 15 tiene un FB\n" +
+                "de 1 (desbalance izquierdo).\n" +
                 "(Presiona la tecla Enter para continuar aprendiendo)");
         entrada.readLine();
         esperar(5);
+    }
+
+    public static void ejerciciosFB() throws IOException {
+        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de FB \uD83C\uDFCB\uFE0F\n\n" +
+                "¿Estás list@ para un ejercicio? \uD83D\uDC40\n" +
+                "(Presiona la tecla Enter para comenzar)");
+        entrada.readLine();
+        ABB arbolEjercicios = new ABB();
+        arbolEjercicios.insertar(100);
+        arbolEjercicios.insertar(50);
+        arbolEjercicios.insertar(120);
+        arbolEjercicios.insertar(40);
+        arbolEjercicios.insertar(60);
+        arbolEjercicios.insertar(150);
+        arbolEjercicios.insertar(70);
+        arbolEjercicios.insertar(130);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        int respuesta;
+        while (true) {
+            System.out.print("\nPregunta 1: ¿Cuál es el FB del nodo de llave 50?\n\n" +
+                    "1) 2\n" +
+                    "2) -1\n" +
+                    "3) 1\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 2) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        while (true) {
+            System.out.print("\nPregunta 2: ¿Cuál de los siguientes nodos está balanceado?\n\n" +
+                    "1) El de llave 100\n" +
+                    "2) El de llave 120\n" +
+                    "3) El de llave 150\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 1) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
     }
 }

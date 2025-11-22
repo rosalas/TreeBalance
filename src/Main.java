@@ -9,6 +9,7 @@ public class Main {
     public static BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
+        /*
         //Introducción.
         PasosJuego.intro();
 
@@ -39,12 +40,19 @@ public class Main {
 
         PasosJuego.ejemploAltura();
 
-        //PasosJuego.ejercicioAltura();
-
-        //PasosJuego.explicarFB();
-
-        //PasosJuego.ejemploAutobalance();
+        PasosJuego.ejerciciosAltura();
 
         PasosJuego.espacio();
+
+        PasosJuego.explicarFB();
+
+        PasosJuego.ejemploFB();
+
+        PasosJuego.ejerciciosFB();
+
+        PasosJuego.espacio();
+         */
+
+        //Etapa 4: Algoritmos del árbol AVL.
     }
 }
