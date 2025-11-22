@@ -29,5 +29,20 @@ public class Main {
         PasosJuego.espacio();
 
         //Etapa 3: Transición hacia el autobalance.
+        PasosJuego.explicarAutobalance();
+
+        PasosJuego.espacio();
+
+        PasosJuego.explicarAltura();
+
+        //PasosJuego.ejemploAltura();
+
+        //PasosJuego.ejercicioAltura();
+
+        //PasosJuego.explicarFB();
+
+        //PasosJuego.ejemploAutobalance();
+
+        PasosJuego.espacio();
     }
 }
