@@ -23,5 +23,11 @@ public class Main {
 
         //Etapa 2: Explicación del desbalance.
         PasosJuego.explicarDesbalance();
+
+        PasosJuego.ejemploDesbalance();
+
+        PasosJuego.espacio();
+
+        //Etapa 3: Transición hacia el autobalance.
     }
 }

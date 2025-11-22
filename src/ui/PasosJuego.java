@@ -11,12 +11,11 @@ public class PasosJuego {
     public static BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
     public static void esperar(int segundos) {
-        for (int c = 0; c <= (segundos - 1); ++c) {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                System.out.println("Lo sentimos, sucedió algo inesperado.");
-            }
+        try {
+            Thread.sleep(segundos * 1000L);
+        } catch (InterruptedException e) {
+            System.out.println("Lo sentimos, sucedió algo inesperado.");
+            Thread.currentThread().interrupt();
         }
     }
 
@@ -36,12 +35,14 @@ public class PasosJuego {
         entrada.readLine();
         for (int c = 2; c >= 0; --c) {
             try {
-                Thread.sleep(1000); // 2000 milliseconds = 2 seconds
+                Thread.sleep(1000L);
             } catch (InterruptedException e) {
                 System.out.println("Lo sentimos, sucedió algo inesperado.");
+                Thread.currentThread().interrupt();
             }
             System.out.println((c + 1) + "...");
         }
+        esperar(1);
         System.out.println("Muy bien, entonces, ¡empecemos! \uD83D\uDCAA\n");
         esperar(5);
     }
@@ -65,16 +66,17 @@ public class PasosJuego {
                 "que se requiere almacenar y gestionar en un programa.\n" +
                 "La llave suele ser un número o cadena alfanumérica.\n\n" +
                 "2) Cada nodo del árbol puede tener máximo dos enlaces\n" +
-                "a otros nodos: su hijo izquierdo y su hijo derecho.\n\n" +
+                "a otros nodos: su hijo izquierdo \uD83D\uDC66⬅\uFE0F y su hijo derecho. ➡\uFE0F\uD83D\uDC66\n\n" +
                 "3) La llave de cada nodo debe ser mayor que la de su\n" +
                 "hijo izquierdo y menor que la de su hijo derecho,\n" +
                 "si los tiene. Un nodo puede tener uno o ambos hijos\n" +
                 "nulos o vacíos.\n\n" +
-                "4) No puede haber redundancia de caminos (o sea, debe\n" +
+                "4) No puede haber redundancia de caminos \uD83D\uDEE3\uFE0F (o sea, debe\n" +
                 "haber un único camino desde cualquier nodo hasta cualquier otro.)\n\n" +
                 "¿Lo entiendes? \uD83D\uDE04\n" +
                 "(Presiona la tecla Enter para ver un ejemplo gráfico)");
         entrada.readLine();
+        esperar(5);
     }
 
     public static void ejemploABB() throws IOException {
@@ -98,21 +100,59 @@ public class PasosJuego {
             }
             System.out.println((c + 1) + "...");
         }
-        System.out.println();
+        esperar(1);
+        System.out.println("\n");
         arbolEjemplo.imprimirArbolPiramide();
-        System.out.print("\n¿Ves cómo el árbol generado respeta todas las reglas de un ABB? \uD83D\uDC9A\n" +
+        System.out.print("\n\n¿Ves cómo el árbol generado respeta todas las reglas de un ABB? \uD83D\uDC9A\n" +
                 "(Presiona la tecla Enter para continuar aprendiendo)");
         entrada.readLine();
         esperar(5);
     }
 
-    public static void explicarDesbalance() {
-        System.out.println("Sin embargo, aunque los ABBs son estructuras de datos\n" +
+    public static void explicarDesbalance() throws IOException {
+        System.out.print("Sin embargo, aunque los ABBs son estructuras de datos\n" +
                 "ordenadas y eficientes, no son perfectos \uD83D\uDE12\n" +
                 "En efecto, los nodos de un ABB pueden presentar lo\n" +
                 "que se conoce como desbalance: la acumulación de más\n" +
                 "nodos de un lado del nodo que del otro, lo cual se\n" +
-                "manifiesta mediante una diferencia en la altura de\n" +
-                "su hijo izquierdo y su hijo derecho.\n");
+                "manifiesta a través de una diferencia en la altura de\n" +
+                "su hijo izquierdo y su hijo derecho.\n" +
+                "(Presiona la tecla Enter para ver un ejemplo gráfico)");
+        entrada.readLine();
+    }
+
+    public static void ejemploDesbalance() throws IOException {
+        System.out.print("\nVamos a construir un ABB desbalanceado \uD83D\uDE1F con las siguientes\n" +
+                "llaves: 10, 20, 30, 5, 25, 35 y 15.\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        ABB arbolDesbalance = new ABB();
+        arbolDesbalance.insertar(10);
+        arbolDesbalance.insertar(20);
+        arbolDesbalance.insertar(30);
+        arbolDesbalance.insertar(5);
+        arbolDesbalance.insertar(25);
+        arbolDesbalance.insertar(35);
+        arbolDesbalance.insertar(15);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000); // 2000 milliseconds = 2 seconds
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolDesbalance.imprimirArbolPiramide();
+        System.out.print("\n\n¿Notaste que las llaves utilizadas en este segundo\n" +
+                "árbol fueron las mismas que en el primero? \uD83D\uDD75\uFE0F\u200D♂\uFE0F\uD83D\uDD75\uFE0F\u200D♀\uFE0F\n" +
+                "Sin embargo, el árbol resultante es muy distinto en ambos casos.\n" +
+                "En efecto, los ABBs son sensibles al orden de inserción:\n" +
+                "las mismas llaves insertadas en órdenes distintos generan\n" +
+                "árboles distintos. \uD83C\uDF33\uD83C\uDF32\uD83C\uDF34\n" +
+                "(Presiona la tecla Enter para continuar aprendiendo)");
+        entrada.readLine();
+        esperar(5);
     }
 }
