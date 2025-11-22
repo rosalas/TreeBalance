@@ -19,6 +19,8 @@ public class Main {
 
         PasosJuego.ejemploABB();
 
+        PasosJuego.ejerciciosABB();
+
         PasosJuego.espacio();
 
         //Etapa 2: Explicación del desbalance.
@@ -35,7 +37,7 @@ public class Main {
 
         PasosJuego.explicarAltura();
 
-        //PasosJuego.ejemploAltura();
+        PasosJuego.ejemploAltura();
 
         //PasosJuego.ejercicioAltura();
 

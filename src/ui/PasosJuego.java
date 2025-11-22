@@ -54,12 +54,15 @@ public class PasosJuego {
     }
 
     public static void explicarABB() throws IOException {
-        System.out.print("Antes que nada, es importante conocer los árboles\n" +
+        System.out.print("\n\n\uD83D\uDCBB Árboles binarios de búsqueda \uD83D\uDCBB\n\n" +
+                "Antes que nada, es importante conocer los árboles\n" +
                 "binarios de búsqueda o ABBs. Un ABB es una estructura\n" +
                 "de datos que permite almacenar información de forma\n" +
                 "ordenada, garantizando eficiencia en operaciones de\n" +
                 "inserción, búsqueda y eliminación.\n\n" +
-                "Todo ABB debe obedecer las siguientes reglas:\n\n" +
+                "(Presiona la tecla Enter para continuar leyendo)");
+        entrada.readLine();
+        System.out.print("\nTodo ABB debe obedecer las siguientes reglas:\n\n" +
                 "1) Cada uno de sus nodos (es decir, los elementos que\n" +
                 "almacena) debe tener una llave \uD83D\uDD11 única e irrepetible.\n" +
                 "Los nodos de un ABB pueden representar cualquier entidad\n" +
@@ -96,7 +99,7 @@ public class PasosJuego {
         arbolEjemplo.insertar(35);
         for (int c = 2; c >= 0; --c) {
             try {
-                Thread.sleep(1000); // 2000 milliseconds = 2 seconds
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 System.out.println("Lo sentimos, sucedió algo inesperado.");
             }
@@ -111,8 +114,72 @@ public class PasosJuego {
         esperar(5);
     }
 
+    public static void ejerciciosABB() throws IOException {
+        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de ABBs \uD83C\uDFCB\uFE0F\n\n" +
+                "¿Estás list@ para un ejercicio? \uD83D\uDC40\n" +
+                "(Presiona la tecla Enter para comenzar)");
+        entrada.readLine();
+        ABB arbolEjercicios = new ABB();
+        arbolEjercicios.insertar(42);
+        arbolEjercicios.insertar(15);
+        arbolEjercicios.insertar(51);
+        arbolEjercicios.insertar(28);
+        arbolEjercicios.insertar(60);
+        arbolEjercicios.insertar(17);
+        arbolEjercicios.insertar(55);
+        arbolEjercicios.insertar(69);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        int respuesta;
+        while (true) {
+            System.out.print("\nPregunta 1: Si el nodo de llave 45 se insertara en el\n" +
+                    "árbol mostrado, ¿cómo debería insertarse en la estructura?\n\n" +
+                    "1) Hijo derecho del 28\n" +
+                    "2) Hijo izquierdo del 51\n" +
+                    "3) Hijo izquierdo del 55\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 2) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        while (true) {
+            System.out.print("\nPregunta 2: ¿Cuál de las siguientes llaves podría\n" +
+                    "insertarse a la derecha del nodo de llave 28 sin afectar\n" +
+                    "el orden de la estructura?\n\n" +
+                    "1) 30\n" +
+                    "2) 50\n" +
+                    "3) 23\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 1) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+    }
+
     public static void explicarDesbalance() throws IOException {
-        System.out.print("Sin embargo, aunque los ABBs son estructuras de datos\n" +
+        System.out.print("\n\n\uD83D\uDCBB Desbalance \uD83D\uDCBB\n\n" +
+                "Sin embargo, aunque los ABBs son estructuras de datos\n" +
                 "ordenadas y eficientes, no son perfectos \uD83D\uDE12\n" +
                 "En efecto, los nodos de un ABB pueden presentar lo\n" +
                 "que se conoce como desbalance: la acumulación de más\n" +
@@ -139,7 +206,7 @@ public class PasosJuego {
         arbolDesbalance.insertar(15);
         for (int c = 2; c >= 0; --c) {
             try {
-                Thread.sleep(1000); // 2000 milliseconds = 2 seconds
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 System.out.println("Lo sentimos, sucedió algo inesperado.");
             }
@@ -153,14 +220,15 @@ public class PasosJuego {
                 "Sin embargo, el árbol resultante es muy distinto en ambos casos.\n" +
                 "En efecto, los ABBs son sensibles al orden de inserción:\n" +
                 "las mismas llaves insertadas en órdenes distintos generan\n" +
-                "árboles distintos. \uD83C\uDF33\uD83C\uDF32\uD83C\uDF34\n" +
+                "árboles distintos \uD83C\uDF33\uD83C\uDF32\uD83C\uDF34\n" +
                 "(Presiona la tecla Enter para continuar aprendiendo)");
         entrada.readLine();
         esperar(5);
     }
 
     public static void explicarAutobalance() throws IOException {
-        System.out.print("Debido a que el desbalance de un ABB lo hace ser menos\n" +
+        System.out.print("\n\n\uD83D\uDCBB Autobalance \uD83D\uDCBB\n\n" +
+                "Debido a que el desbalance de un ABB lo hace ser menos\n" +
                 "eficiente, ya que pierde, aunque sea de forma parcial, su carácter\n" +
                 "binario y se asemeja a una estructura lineal, se han propuesto\n" +
                 "diversas estructuras que comparten el aspecto general del ABB pero\n" +
@@ -178,21 +246,62 @@ public class PasosJuego {
     }
 
     public static void explicarAltura() throws IOException {
-        System.out.print("Para entender el concepto de factor de balance,\n" +
+        System.out.print("\n\n\uD83D\uDCBB Altura \uD83D\uDCBB\n\n" +
+                "Para entender el concepto de factor de balance,\n" +
                 "primero es necesario saber qué se entiende por altura\n" +
                 "de un nodo \uD83C\uDFD4\uFE0F\n\n" +
                 "➡\uFE0F La altura de un nodo se define como la longitud\n" +
                 "del camino más largo que se puede seguir desde un nodo\n" +
-                "cualquiera hasta llegar a una hoja \uD83C\uDF3F\n" +
-                "(Nota: Se llama hoja a los nodos que no tienen hijos)\n" +
+                "cualquiera hasta llegar a un nodo nulo \uD83C\uDF3F\n" +
+                "(\uD83D\uDD0D Nota: Se llama hoja a los nodos que no tienen hijos)\n" +
                 "➡\uFE0F Por definición, se dice que la altura de una hoja es\n" +
-                "siempre 1, ya que para llegar a ella sólo hace falta\n" +
-                "referenciar a un nodo (ella misma).\n" +
+                "siempre 1, ya que para llegar de ella a un nodo nulo sólo\n" +
+                "hace falta referenciar un nodo (algunos de sus hijos nulos).\n" +
                 "➡\uFE0F Los nodos nulos, por la misma razón, tienen una altura\n" +
                 "de 0.\n" +
                 "➡\uFE0F En todo árbol binario de búsqueda, la raíz es siempre\n" +
                 "el nodo con mayor altura.\n" +
                 "(Presiona la tecla Enter para ver un ejemplo)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void ejemploAltura() throws IOException {
+        System.out.print("\nAnalicemos el mismo árbol desbalanceado del ejemplo\n" +
+                "anterior \uD83D\uDC40\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        ABB arbolDesbalance = new ABB();
+        arbolDesbalance.insertar(10);
+        arbolDesbalance.insertar(20);
+        arbolDesbalance.insertar(30);
+        arbolDesbalance.insertar(5);
+        arbolDesbalance.insertar(25);
+        arbolDesbalance.insertar(35);
+        arbolDesbalance.insertar(15);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolDesbalance.imprimirArbolPiramide();
+        System.out.print("\n\nComo se puede ver, llegar a una hoja desde la raíz\n" +
+                "implica un camino de sólo dos nodos si se hace\n" +
+                "por la izquierda, mientras que por la derecha sería\n" +
+                "de cuatro nodos. Como la altura del nodo es el camino\n" +
+                "más largo que se puede seguir desde él hasta una hoja,\n" +
+                "se puede concluir que la altura de la raíz del árbol es de 4.\n" +
+                "(\uD83D\uDD0D Nota: al indicar la longitud de un camino en un ABB,\n" +
+                "tanto el nodo inicial como el nodo final se toman en cuenta)\n" +
+                "La altura del nodo 20 es de 3 y la del nodo 30 es 2.\n" +
+                "La altura de los nodos 5, 15, 25 y 35, al ser todos\n" +
+                "hojas, es de 1.\n" +
+                "(Presiona la tecla Enter para continuar aprendiendo)");
         entrada.readLine();
         esperar(5);
     }
