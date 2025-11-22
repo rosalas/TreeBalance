@@ -80,7 +80,7 @@ public class PasosJuego {
                 "5) No puede haber redundancia de caminos \uD83D\uDEE3\uFE0F (o sea, debe\n" +
                 "haber un único camino desde cualquier nodo hasta cualquier otro.)\n\n" +
                 "¿Lo entiendes? \uD83D\uDE04\n" +
-                "(Presiona la tecla Enter para ver un ejemplo)");
+                "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
         entrada.readLine();
         esperar(5);
     }
@@ -110,7 +110,7 @@ public class PasosJuego {
         System.out.println("\n");
         arbolEjemplo.imprimirArbolPiramide();
         System.out.print("\n\n¿Ves cómo el árbol generado respeta todas las reglas de un ABB? \uD83D\uDC9A\n" +
-                "(Presiona la tecla Enter para practicar lo aprendido)");
+                "(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
         entrada.readLine();
         esperar(5);
     }
@@ -177,7 +177,7 @@ public class PasosJuego {
             }
         }
         System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
-                "(Presiona la tecla Enter para continuar aprendiendo)");
+                "(Presiona la tecla Enter para continuar aprendiendo \uD83D\uDCD6)");
         entrada.readLine();
         esperar(5);
     }
@@ -191,7 +191,7 @@ public class PasosJuego {
                 "nodos de un lado del nodo que del otro, lo cual se\n" +
                 "manifiesta a través de una diferencia en la altura de\n" +
                 "su hijo izquierdo y su hijo derecho.\n" +
-                "(Presiona la tecla Enter para ver un ejemplo)");
+                "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
         entrada.readLine();
         esperar(5);
     }
@@ -226,7 +226,7 @@ public class PasosJuego {
                 "En efecto, los ABBs son sensibles al orden de inserción:\n" +
                 "las mismas llaves insertadas en órdenes distintos generan\n" +
                 "árboles distintos \uD83C\uDF33\uD83C\uDF32\uD83C\uDF34\n" +
-                "(Presiona la tecla Enter para continuar aprendiendo)");
+                "(Presiona la tecla Enter para continuar aprendiendo \uD83D\uDCD6)");
         entrada.readLine();
         esperar(5);
     }
@@ -246,7 +246,7 @@ public class PasosJuego {
                 "balance (FB) menor que o mayor que el permitido.\n" +
                 "balance (FB) menor que o mayor que el permitido.\n" +
                 "A continuación, vamos a aprender sobre el FB y la altura de los nodos.\n" +
-                "(Presiona la tecla Enter para seguir aprendiendo)");
+                "(Presiona la tecla Enter para seguir aprendiendo \uD83D\uDCD6)");
         entrada.readLine();
         esperar(5);
     }
@@ -269,7 +269,7 @@ public class PasosJuego {
                 "el nodo con mayor altura.\n" +
                 "➡\uFE0F La altura de cualquier nodo debe ser igual o mayor que 0\n" +
                 "(es decir, no hay alturas negativas).\n" +
-                "(Presiona la tecla Enter para ver un ejemplo)");
+                "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
         entrada.readLine();
         esperar(5);
     }
@@ -309,7 +309,7 @@ public class PasosJuego {
                 "La altura del nodo 20 es de 3 y la del nodo 30 es 2.\n" +
                 "La altura de los nodos 5, 15, 25 y 35, al ser todos\n" +
                 "hojas, es de 1.\n" +
-                "(Presiona la tecla Enter para practicar lo aprendido)");
+                "(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
         entrada.readLine();
         esperar(5);
     }
@@ -373,7 +373,7 @@ public class PasosJuego {
             }
         }
         System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
-                "(Presiona la tecla Enter para continuar aprendiendo)");
+                "(Presiona la tecla Enter para continuar aprendiendo \uD83D\uDCD6)");
         entrada.readLine();
         esperar(5);
     }
@@ -386,7 +386,7 @@ public class PasosJuego {
                 "su hijo derecho \uD83D\uDE04\n\n" +
                 "FB = h_izquierda - h_derecha\n\n" +
                 "Como se calcula mediante la resta de números que siempre son" +
-                "(Presiona la tecla Enter para ver un ejemplo)");
+                "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
         entrada.readLine();
         esperar(5);
     }
@@ -422,7 +422,7 @@ public class PasosJuego {
                 "El nodo de llave 80, por otra parte, tiene un FB de -2 (es decir, está\n" +
                 "desbalanceado hacia la derecha), mientras que el de llave 15 tiene un FB\n" +
                 "de 1 (desbalance izquierdo).\n" +
-                "(Presiona la tecla Enter para practicar lo aprendido)");
+                "(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
         entrada.readLine();
         esperar(5);
     }
@@ -486,7 +486,7 @@ public class PasosJuego {
             }
         }
         System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
-                "(Presiona la tecla Enter para continuar aprendiendo)");
+                "(Presiona la tecla Enter para continuar aprendiendo \uD83D\uDCD6)");
         entrada.readLine();
         esperar(5);
     }
@@ -501,7 +501,7 @@ public class PasosJuego {
                 "evaluar si los nodos desde la raíz hasta la posición afectada\n" +
                 "están bien balanceados; si no lo están, se debe ejecutar una o\n" +
                 "más rotaciones para corregir el desbalance del árbol ✏\uFE0F\n" +
-                "(Presiona la tecla Enter para ver un ejemplo)");
+                "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
         entrada.readLine();
         esperar(5);
     }
@@ -553,7 +553,7 @@ public class PasosJuego {
         System.out.print("\n\nAhora, la raíz del árbol y el nodo de llave 15 tienen\n" +
                 "un desbalance no permitido \uD83D\uDE45 (de +2 y -2 respectivamente).\n" +
                 "Será necesario aplicar rotaciones para corregir la estructura ♻\uFE0F\n" +
-                "(Presiona la tecla Enter para practicar lo aprendido)");
+                "(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
         entrada.readLine();
         esperar(5);
     }
@@ -617,7 +617,7 @@ public class PasosJuego {
             }
         }
         System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
-                "(Presiona la tecla Enter para continuar aprendiendo)");
+                "(Presiona la tecla Enter para continuar aprendiendo \uD83D\uDCD6)");
         entrada.readLine();
         esperar(5);
     }
@@ -630,7 +630,7 @@ public class PasosJuego {
                 "distintos de rotaciones que se puede llevar a cabo, debido a\n" +
                 "que hay también cuatro formas distintas de desbalances que se\n" +
                 "pueden presentar:\n\n" +
-                "1) Desbalance izquierdo-izquierdo: hay un nodo desbalanceado\n" +
+                "1) Desbalance izquierdo-izquierdo (L-L): hay un nodo desbalanceado\n" +
                 "hacia la izquierda, cuyo hijo izquierdo también está desbalanceado\n" +
                 "hacia la izquierda; es decir, el nodo tiene FB de +2 y su hijo izquierdo de +1.\n" +
                 "Este tipo de desbalance se corrige con una rotación derecha sobre el\n" +
@@ -638,7 +638,7 @@ public class PasosJuego {
                 "(Presiona la tecla Enter para continuar leyendo)");
         entrada.readLine();
         esperar(1);
-        System.out.print("\n2) Desbalance izquierdo-derecho: hay un nodo desbalanceado hacia\n" +
+        System.out.print("\n2) Desbalance izquierdo-derecho (L-R): hay un nodo desbalanceado hacia\n" +
                 "la izquierda, pero su hijo izquierdo está desbalanceado hacia la\n" +
                 "derecha; es decir, el nodo tiene FB de +2 y su hijo izquierdo de -1.\n" +
                 "Este tipo de desbalance se corrige con una rotación izquierda sobre el\n" +
@@ -648,7 +648,7 @@ public class PasosJuego {
                 "(Presiona la tecla Enter para continuar leyendo)");
         entrada.readLine();
         esperar(1);
-        System.out.print("\n3) Desbalance derecho-izquierdo: hay un nodo desbalanceado hacia\n" +
+        System.out.print("\n3) Desbalance derecho-izquierdo (R-L): hay un nodo desbalanceado hacia\n" +
                 "la derecha, pero su hijo derecho está desbalanceado hacia la\n" +
                 "la izquierda; es decir, el nodo tiene FB de -2 y su hijo derecho de +1.\n" +
                 "Este tipo de desbalance se corrige con una rotación derecha sobre el\n" +
@@ -658,12 +658,115 @@ public class PasosJuego {
                 "(Presiona la tecla Enter para continuar leyendo)");
         entrada.readLine();
         esperar(1);
-        System.out.print("\n4) Desbalance derecho-derecho: hay un nodo desbalanceado\n" +
+        System.out.print("\n4) Desbalance derecho-derecho (R-R): hay un nodo desbalanceado\n" +
                 "hacia la derecha, cuyo hijo derecho también está desbalanceado\n" +
                 "hacia la derecha; es decir, el nodo tiene FB de -2 y su hijo derecho de -1.\n" +
                 "Este tipo de desbalance se corrige con una rotación izquierda sobre el\n" +
                 "nodo en el que se detectó el desbalance prohibido originalmente ↪\uFE0F\n\n" +
-                "(Presiona la tecla Enter para ver un ejemplo de cada tipo de desbalance)");
+                "(Presiona la tecla Enter para ver un ejemplo de cada tipo de desbalance \uD83D\uDC41\uFE0F)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void ejemplosRotaciones() throws IOException {
+        System.out.print("\nVamos a construir varios árboles pequeños para mostrar los distintos\n" +
+                "tipos de desbalance:\n\n" +
+                "Desbalance izquierdo-izquierdo:\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        ABB arbolEjemplo = new ABB();
+        arbolEjemplo.insertar(22);
+        arbolEjemplo.insertar(13);
+        arbolEjemplo.insertar(37);
+        arbolEjemplo.insertar(6);
+        arbolEjemplo.insertar(18);
+        arbolEjemplo.insertar(3);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nEl árbol anterior tiene una raíz con FB de +2, y su hijo\n" +
+                "izquierdo también tiene un desbalance en la misma dirección \uD83D\uDE12\n" +
+                "Este árbol se corregiría con una rotación derecha sobre la raíz ↩\uFE0F\n" +
+                "Sin embargo, si en lugar de insertarle una llave de 3 al final se le\n" +
+                "insertara una llave de 20... \uD83D\uDC40\n\n" +
+                "Desbalance izquierdo-derecho:\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.eliminar(3);
+        arbolEjemplo.insertar(20);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nEl árbol anterior también tiene una raíz con FB de +2, pero ahora\n" +
+                "su hijo izquierdo tiene un desbalance en la dirección contraria \uD83D\uDE12\n" +
+                "Este árbol se corregiría con una rotación izquierda sobre el nodo de llave 10 ↪\uFE0F\n" +
+                "seguida de una rotación derecha sobre la raíz ↩\uFE0F\n" +
+                "Veamos ahora un árbol distinto \uD83D\uDC40\n\n" +
+                "Desbalance derecho-derecho:\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.eliminar(6);
+        arbolEjemplo.eliminar(18);
+        arbolEjemplo.eliminar(20);
+        arbolEjemplo.insertar(25);
+        arbolEjemplo.insertar(40);
+        arbolEjemplo.insertar(39);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nEl árbol anterior tiene una raíz con FB de -2, y su hijo\n" +
+                "derecho también tiene un desbalance en la misma dirección \uD83D\uDE12\n" +
+                "Este árbol se corregiría con una rotación izquierda sobre la raíz ↪\uFE0F\n" +
+                "Sin embargo, si en lugar de insertarle una llave de 39 al final se le\n" +
+                "insertara una llave de 27... \uD83D\uDC40\n\n" +
+                "Desbalance derecho-izquierdo:\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.eliminar(39);
+        arbolEjemplo.insertar(27);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nEl árbol anterior también tiene una raíz con FB de -2, pero ahora\n" +
+                "su hijo derecho tiene un desbalance en la dirección contraria \uD83D\uDE12\n" +
+                "Este árbol se corregiría con una rotación derecha sobre el nodo de llave 30 ↩\uFE0F\n" +
+                "seguida de una rotación izquierda sobre la raíz ↪\uFE0F\n" +
+                "(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
         entrada.readLine();
         esperar(5);
     }

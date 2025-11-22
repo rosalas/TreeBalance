@@ -62,9 +62,9 @@ public class Main {
         PasosJuego.espacio();
 
         PasosJuego.explicarRotaciones();
-         */
 
-        //PasosJuego.ejemploRotaciones();
+        PasosJuego.ejemplosRotaciones();
+         */
 
         //PasosJuego.ejerciciosRotaciones();
 
