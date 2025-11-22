@@ -148,7 +148,14 @@ public class PasosJuego {
                     "2) Hijo izquierdo del 51\n" +
                     "3) Hijo izquierdo del 55\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 2) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -167,7 +174,14 @@ public class PasosJuego {
                     "2) 50\n" +
                     "3) 23\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 1) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -315,7 +329,7 @@ public class PasosJuego {
     }
 
     public static void ejerciciosAltura() throws IOException {
-        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de ABBs \uD83C\uDFCB\uFE0F\n\n" +
+        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de altura \uD83C\uDFCB\uFE0F\n\n" +
                 "¿Estás list@ para unos ejercicios? \uD83D\uDC40\n" +
                 "(Presiona la tecla Enter para comenzar)");
         entrada.readLine();
@@ -344,9 +358,16 @@ public class PasosJuego {
                     "a un nodo de altura 1?\n\n" +
                     "1) 90\n" +
                     "2) 70\n" +
-                    "3) 60\n\n" +
+                    "3) 40\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 3) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -358,12 +379,19 @@ public class PasosJuego {
         System.out.println("\n");
         arbolEjercicios.imprimirArbolPiramide();
         while (true) {
-            System.out.print("\nPregunta 2: ¿Cuál es la altura del nodo de llave 100?\n\n" +
-                    "1) 1\n" +
+            System.out.print("\nPregunta 2: ¿Cuál es la altura del nodo de llave 90?\n\n" +
+                    "1) 2\n" +
                     "2) 0\n" +
-                    "3) 2\n\n" +
+                    "3) 1\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 1) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -385,7 +413,6 @@ public class PasosJuego {
                 "diferencia entre la altura de su hijo izquierdo y la de\n" +
                 "su hijo derecho \uD83D\uDE04\n\n" +
                 "FB = h_izquierda - h_derecha\n\n" +
-                "Como se calcula mediante la resta de números que siempre son" +
                 "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
         entrada.readLine();
         esperar(5);
@@ -459,7 +486,14 @@ public class PasosJuego {
                     "2) -1\n" +
                     "3) 1\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 2) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -476,7 +510,14 @@ public class PasosJuego {
                     "2) El de llave 120\n" +
                     "3) El de llave 150\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 1) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -589,7 +630,14 @@ public class PasosJuego {
                     "2) 40\n" +
                     "3) 55\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 3) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -607,7 +655,14 @@ public class PasosJuego {
                     "2) El de llave 50\n" +
                     "3) El de llave 10\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 3) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -804,7 +859,14 @@ public class PasosJuego {
                     "3) Izquierda-derecha\n" +
                     "4) Derecha-izquierda\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 4) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -822,8 +884,15 @@ public class PasosJuego {
                     "2) 25\n" +
                     "3) 40\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
-            if (respuesta == 1) {
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
+            if (respuesta == 2) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
             } else {
@@ -932,7 +1001,14 @@ public class PasosJuego {
                     "2) 120\n" +
                     "3) 100\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 2) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -950,7 +1026,14 @@ public class PasosJuego {
                     "2) Ninguna\n" +
                     "3) 115\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 3) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -1020,7 +1103,7 @@ public class PasosJuego {
                 "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
         entrada.readLine();
         esperar(1);
-        arbolEjemplo.insertar(25);
+        arbolEjemplo.insertar(60);
         System.out.println("\n");
         arbolEjemplo.imprimirArbolPiramide();
         System.out.print("\n\n(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
@@ -1034,13 +1117,13 @@ public class PasosJuego {
                 "(Presiona la tecla Enter para comenzar)");
         entrada.readLine();
         ABB arbolEjercicios = new ABB();
-        arbolEjercicios.insertar(100);
-        arbolEjercicios.insertar(75);
-        arbolEjercicios.insertar(120);
-        arbolEjercicios.insertar(50);
-        arbolEjercicios.insertar(110);
-        arbolEjercicios.insertar(105);
-        arbolEjercicios.insertar(115);
+        arbolEjercicios.insertar(20);
+        arbolEjercicios.insertar(3);
+        arbolEjercicios.insertar(30);
+        arbolEjercicios.insertar(10);
+        arbolEjercicios.insertar(25);
+        arbolEjercicios.insertar(5);
+        arbolEjercicios.insertar(11);
         for (int c = 2; c >= 0; --c) {
             try {
                 Thread.sleep(1000);
@@ -1055,13 +1138,20 @@ public class PasosJuego {
         int respuesta;
         while (true) {
             System.out.print("\nPregunta 1: ¿Al nodo de cuál llave hay que aplicarle\n" +
-                    "una rotación derecha?\n\n" +
-                    "1) 110\n" +
-                    "2) 120\n" +
-                    "3) 100\n" +
+                    "una rotación izquierda?\n\n" +
+                    "1) 3\n" +
+                    "2) 10\n" +
+                    "3) 20\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
-            if (respuesta == 2) {
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
+            if (respuesta == 1) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
             } else {
@@ -1072,13 +1162,20 @@ public class PasosJuego {
         System.out.println("\n");
         arbolEjercicios.imprimirArbolPiramide();
         while (true) {
-            System.out.print("\nPregunta 2: ¿Cuál será la llave del hijo izquierdo\n" +
+            System.out.print("\nPregunta 2: ¿Cuál será la llave del hijo derecho\n" +
                     "del nodo desbalanceado original tras la rotación?\n\n" +
-                    "1) 105\n" +
+                    "1) 11\n" +
                     "2) Ninguna\n" +
-                    "3) 115\n\n" +
+                    "3) 5\n\n" +
                     "Respuesta: ");
-            respuesta = Integer.parseInt(entrada.readLine());
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
             if (respuesta == 3) {
                 System.out.println("\n\n✔\uFE0F ¡Correcto!");
                 break;
@@ -1151,6 +1248,83 @@ public class PasosJuego {
         esperar(5);
     }
 
+    public static void ejerciciosRotacionRL() throws IOException {
+        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de rotación derecha-izquierda \uD83C\uDFCB\uFE0F\n\n" +
+                "¿Estás list@ para unos ejercicios? \uD83D\uDC40\n" +
+                "(Presiona la tecla Enter para comenzar)");
+        entrada.readLine();
+        ABB arbolEjercicios = new ABB();
+        arbolEjercicios.insertar(33);
+        arbolEjercicios.insertar(17);
+        arbolEjercicios.insertar(42);
+        arbolEjercicios.insertar(45);
+        arbolEjercicios.insertar(43);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        int respuesta;
+        while (true) {
+            System.out.print("\nPregunta 1: ¿Al nodo de cuál llave hay que aplicarle\n" +
+                    "la rotación derecha?\n\n" +
+                    "1) 45\n" +
+                    "2) 43\n" +
+                    "3) 42\n" +
+                    "Respuesta: ");
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
+            if (respuesta == 1) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        while (true) {
+            System.out.print("\nPregunta 2: ¿Al nodo de cuál llave hay que aplicarle\n" +
+                    "la rotación izquierda luego?\n\n" +
+                    "1) 43\n" +
+                    "2) 45\n" +
+                    "3) 42\n\n" +
+                    "Respuesta: ");
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
+            if (respuesta == 3) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
+                "(Presiona la tecla Enter para continuar aprendiendo \uD83D\uDCD6)");
+        entrada.readLine();
+        esperar(5);
+    }
+
     public static void explicarRotacionLR() throws IOException {
         System.out.print("\n\n\uD83D\uDCBB Rotación izquierda-derecha \uD83D\uDCBB\n\n" +
                 "Cuando se debe hacer una rotación izquierda-derecha sobre un nodo\n" +
@@ -1206,6 +1380,92 @@ public class PasosJuego {
         arbolEjemplo.imprimirArbolPiramide();
         System.out.print("\n\n(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
         entrada.readLine();
+        esperar(5);
+    }
+
+    public static void ejerciciosRotacionLR() throws IOException {
+        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de rotación izquierda-derecha \uD83C\uDFCB\uFE0F\n\n" +
+                "¿Estás list@ para unos ejercicios? \uD83D\uDC40\n" +
+                "(Presiona la tecla Enter para comenzar)");
+        entrada.readLine();
+        ABB arbolEjercicios = new ABB();
+        arbolEjercicios.insertar(40);
+        arbolEjercicios.insertar(25);
+        arbolEjercicios.insertar(82);
+        arbolEjercicios.insertar(67);
+        arbolEjercicios.insertar(71);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        int respuesta;
+        while (true) {
+            System.out.print("\nPregunta 1: ¿Al nodo de cuál llave hay que aplicarle\n" +
+                    "la rotación izquierda?\n\n" +
+                    "1) 40\n" +
+                    "2) 82\n" +
+                    "3) 67\n" +
+                    "Respuesta: ");
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
+            if (respuesta == 3) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        while (true) {
+            System.out.print("\nPregunta 2: ¿Al nodo de cuál llave hay que aplicarle\n" +
+                    "la rotación derecha luego?\n\n" +
+                    "1) 67\n" +
+                    "2) 82\n" +
+                    "3) 71\n\n" +
+                    "Respuesta: ");
+            while(true) {
+                try {
+                    respuesta = Integer.parseInt(entrada.readLine());
+                    break;
+                } catch(Exception e) {
+                    System.out.print("Dato inválido. Por favor vuelva a ingresar su respuesta: ");
+                }
+            }
+            if (respuesta == 2) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
+                "(Presiona la tecla Enter para finalizar)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void despedida() throws IOException {
+        System.out.println("\uD83D\uDC4F\uD83D\uDC4F\uD83D\uDC4F ¡Felicidades, ha completado TreeBalance! " +
+                "\uD83D\uDC4F\uD83D\uDC4F\uD83D\uDC4F\n\n" +
+                "Gracias por utilizar nuestra aplicación, esperamos\n" +
+                "que haya aprendido mucho sobre los árboles binarios\n" +
+                "autobalanceados \uD83D\uDE09");
         esperar(5);
     }
 }

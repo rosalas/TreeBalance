@@ -9,7 +9,7 @@ public class Main {
     public static BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
     public static void main(String[] args) throws IOException {
-        /*
+
         // Etapa 0: Introducción.
         PasosJuego.intro();
 
@@ -84,17 +84,24 @@ public class Main {
 
         PasosJuego.ejerciciosRotacionL();
 
+        PasosJuego.espacio();
+
         PasosJuego.explicarRotacionRL();
 
         PasosJuego.ejemploRotacionRL();
-         */
 
-        //PasosJuego.ejerciciosRotacionRL();
+        PasosJuego.ejerciciosRotacionRL();
 
-        //PasosJuego.explicarRotacionLR();
+        PasosJuego.espacio();
 
-        //PasosJuego.ejemploRotacionLR();
+        PasosJuego.explicarRotacionLR();
 
-        //PasosJuego.ejerciciosRotacionLR();
+        PasosJuego.ejemploRotacionLR();
+
+        PasosJuego.ejerciciosRotacionLR();
+
+        PasosJuego.espacio();
+
+        PasosJuego.despedida();
     }
 }
