@@ -71,11 +71,12 @@ public class Main {
 
         //Etapa 5: Realización de rotaciones.
         PasosJuego.explicarRotacionR();
+
+        PasosJuego.ejemploRotacionR();
+
          */
 
-        //PasosJuego.ejemploRotacionR();
-
-        //PasosJuego.ejercicioRotacionR();
+        PasosJuego.ejerciciosRotacionR();
 
         //PasosJuego.explicarRotacionL();
 

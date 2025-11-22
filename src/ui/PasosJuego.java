@@ -771,6 +771,72 @@ public class PasosJuego {
         esperar(5);
     }
 
+    public static void ejerciciosRotaciones() throws IOException {
+        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de rotaciones \uD83C\uDFCB\uFE0F\n\n" +
+                "¿Estás list@ para unos ejercicios? \uD83D\uDC40\n" +
+                "(Presiona la tecla Enter para comenzar)");
+        entrada.readLine();
+        ABB arbolEjercicios = new ABB();
+        arbolEjercicios.insertar(40);
+        arbolEjercicios.insertar(20);
+        arbolEjercicios.insertar(90);
+        arbolEjercicios.insertar(30);
+        arbolEjercicios.insertar(70);
+        arbolEjercicios.insertar(100);
+        arbolEjercicios.insertar(25);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        int respuesta;
+        while (true) {
+            System.out.print("\nPregunta 1: ¿Cuál tipo de rotación se debe aplicar\n" +
+                    "sobre el nodo con llave 20?\n\n" +
+                    "1) Izquierda\n" +
+                    "2) Derecha\n" +
+                    "3) Izquierda-derecha\n" +
+                    "4) Derecha-izquierda\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 4) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        while (true) {
+            System.out.print("\nPregunta 2: ¿Cuál es la llave del nodo que quedará\n" +
+                    "en la posición original del 20 tras su corrección?\n\n" +
+                    "1) 30\n" +
+                    "2) 25\n" +
+                    "3) 40\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 1) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
+                "(Presiona la tecla Enter para continuar aprendiendo \uD83D\uDCD6)");
+        entrada.readLine();
+        esperar(5);
+    }
+
     public static void explicarRotacionR() throws IOException {
         System.out.print("\n\n\uD83D\uDCBB Rotación derecha \uD83D\uDCBB\n\n" +
                 "Cuando se debe hacer una rotación derecha sobre un nodo\n" +
@@ -783,6 +849,118 @@ public class PasosJuego {
                 "inicio se debe poner como hijo izquierdo al nodo que presentaba\n" +
                 "el desbalance original, quien debe heredarlo.\n" +
                 "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void ejemploRotacionR() throws IOException {
+        System.out.print("\nVamos a construir un pequeño ABB desbalanceado de forma izquierda-izquierda:\n" +
+                "30, 20, 10 y 25.\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        ABB arbolEjemplo = new ABB();
+        arbolEjemplo.insertar(30);
+        arbolEjemplo.insertar(20);
+        arbolEjemplo.insertar(10);
+        arbolEjemplo.insertar(25);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nLa corrección del árbol requiere una rotación derecha simple.\n" +
+                "El nodo de llave 25 debe reservarse, y una vez hecho eso, la raíz pasa a ser\n" +
+                "hijo derecho del nodo que originalmente era su hijo izquierdo.\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.eliminar(25);
+        arbolEjemplo.eliminar(30);
+        arbolEjemplo.insertar(30);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nPor último, se pone el nodo reservado como hijo\n" +
+                "izquierdo del nodo que originalmente estaba desbalanceado.\n" +
+                "La llave del árbol original presentaba un FB de +2, mientras que\n" +
+                "el árbol resultante tiene una raíz con FB de -1. \uD83D\uDE01\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.insertar(25);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\n(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void ejerciciosRotacionR() throws IOException {
+        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de rotación derecha \uD83C\uDFCB\uFE0F\n\n" +
+                "¿Estás list@ para unos ejercicios? \uD83D\uDC40\n" +
+                "(Presiona la tecla Enter para comenzar)");
+        entrada.readLine();
+        ABB arbolEjercicios = new ABB();
+        arbolEjercicios.insertar(100);
+        arbolEjercicios.insertar(75);
+        arbolEjercicios.insertar(120);
+        arbolEjercicios.insertar(50);
+        arbolEjercicios.insertar(110);
+        arbolEjercicios.insertar(105);
+        arbolEjercicios.insertar(115);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        int respuesta;
+        while (true) {
+            System.out.print("\nPregunta 1: ¿Al nodo de cuál llave hay que aplicarle\n" +
+                    "una rotación derecha?\n\n" +
+                    "1) 110\n" +
+                    "2) 120\n" +
+                    "3) 100\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 2) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        while (true) {
+            System.out.print("\nPregunta 2: ¿Cuál será la llave del hijo izquierdo\n" +
+                    "del nodo desbalanceado original tras la rotación?\n\n" +
+                    "1) 105\n" +
+                    "2) Ninguna\n" +
+                    "3) 115\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 3) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
+                "(Presiona la tecla Enter para continuar aprendiendo \uD83D\uDCD6)");
         entrada.readLine();
         esperar(5);
     }
