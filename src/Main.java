@@ -10,12 +10,12 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         /*
-        //Introducción.
+        // Etapa 0: Introducción.
         PasosJuego.intro();
 
         PasosJuego.espacio();
 
-        //Etapa 1: Explicación del ABB.
+        // Etapa 1: Explicación del ABB.
         PasosJuego.explicarABB();
 
         PasosJuego.ejemploABB();
@@ -24,14 +24,14 @@ public class Main {
 
         PasosJuego.espacio();
 
-        //Etapa 2: Explicación del desbalance.
+        // Etapa 2: Explicación del desbalance.
         PasosJuego.explicarDesbalance();
 
         PasosJuego.ejemploDesbalance();
 
         PasosJuego.espacio();
 
-        //Etapa 3: Transición hacia el autobalance.
+        // Etapa 3: Transición hacia el autobalance.
         PasosJuego.explicarAutobalance();
 
         PasosJuego.espacio();
@@ -52,7 +52,7 @@ public class Main {
 
         PasosJuego.espacio();
 
-        //Etapa 4: Algoritmos del árbol AVL.
+        // Etapa 4: Explicación del árbol AVL.
         PasosJuego.explicarAVL();
 
         PasosJuego.ejemploAVL();
@@ -64,10 +64,35 @@ public class Main {
         PasosJuego.explicarRotaciones();
 
         PasosJuego.ejemplosRotaciones();
-         */
 
-        //PasosJuego.ejerciciosRotaciones();
+        PasosJuego.ejerciciosRotaciones();
 
         PasosJuego.espacio();
+
+        //Etapa 5: Realización de rotaciones.
+        PasosJuego.explicarRotacionR();
+         */
+
+        //PasosJuego.ejemploRotacionR();
+
+        //PasosJuego.ejercicioRotacionR();
+
+        //PasosJuego.explicarRotacionL();
+
+        //PasosJuego.ejemploRotacionL();
+
+        //PasosJuego.ejercicioRotacionL();
+
+        //PasosJuego.explicarRotacionRL();
+
+        //PasosJuego.ejemploRotacionRL();
+
+        //PasosJuego.ejercicioRotacionRL();
+
+        //PasosJuego.explicarRotacionLR();
+
+        //PasosJuego.ejemploRotacionLR();
+
+        //PasosJuego.ejercicioRotacionLR();
     }
 }

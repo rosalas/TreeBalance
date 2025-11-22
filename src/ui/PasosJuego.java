@@ -770,4 +770,60 @@ public class PasosJuego {
         entrada.readLine();
         esperar(5);
     }
+
+    public static void explicarRotacionR() throws IOException {
+        System.out.print("\n\n\uD83D\uDCBB Rotación derecha \uD83D\uDCBB\n\n" +
+                "Cuando se debe hacer una rotación derecha sobre un nodo\n" +
+                "con desbalance izquierdo-izquierdo, lo primero que hay que\n" +
+                "hacer es reservar el hijo derecho de su hijo izquierdo, si\n" +
+                "existe. Una vez hecho eso, la relación entre el nodo desbalanceado\n" +
+                "y su hijo izquierdo debe invertirse hacia la otra dirección:\n" +
+                "el hijo izquierdo pasa a ser padre, y el padre pasa a ser\n" +
+                "hijo derecho. Por último, el nodo que se había reservado al\n" +
+                "inicio se debe poner como hijo izquierdo al nodo que presentaba\n" +
+                "el desbalance original, quien debe heredarlo.\n" +
+                "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void explicarRotacionL() throws IOException {
+        System.out.print("\n\n\uD83D\uDCBB Rotación izquierda \uD83D\uDCBB\n\n" +
+                "Cuando se debe hacer una rotación izquierda sobre un nodo\n" +
+                "con desbalance derecho-derecho, lo primero que hay que\n" +
+                "hacer es reservar el hijo izquierdo de su hijo derecho si\n" +
+                "existe. Una vez hecho eso, la relación entre el nodo desbalanceado\n" +
+                "y su hijo derecho debe invertirse hacia la otra dirección:\n" +
+                "el hijo derecho pasa a ser padre, y el padre pasa a ser\n" +
+                "hijo izquierdo. Por último, el nodo que se había reservado al\n" +
+                "inicio se debe poner como hijo derecho al nodo que presentaba\n" +
+                "el desbalance original, quien debe heredarlo.\n" +
+                "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void explicarRotacionRL() throws IOException {
+        System.out.print("\n\n\uD83D\uDCBB Rotación derecha-izquierda \uD83D\uDCBB\n\n" +
+                "Cuando se debe hacer una rotación derecha-izquierda sobre un nodo\n" +
+                "con desbalance derecho-izquierdo, lo primero que hay que\n" +
+                "hacer es realizar una rotación derecha sobre el hijo derecho\n" +
+                "del nodo desbalanceado. Una vez hecho eso, se debe realizar\n" +
+                "una rotación izquierda sobre el nodo desbalanceado.\n" +
+                "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void explicarRotacionLR() throws IOException {
+        System.out.print("\n\n\uD83D\uDCBB Rotación izquierda-derecha \uD83D\uDCBB\n\n" +
+                "Cuando se debe hacer una rotación izquierda-derecha sobre un nodo\n" +
+                "con desbalance izquierdo-derecho, lo primero que hay que\n" +
+                "hacer es realizar una rotación izquierda sobre el hijo izquierdo\n" +
+                "del nodo desbalanceado. Una vez hecho eso, se debe realizar\n" +
+                "una rotación derecha sobre el nodo desbalanceado.\n" +
+                "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
+        entrada.readLine();
+        esperar(5);
+    }
 }
