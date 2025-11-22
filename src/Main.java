@@ -74,26 +74,27 @@ public class Main {
 
         PasosJuego.ejemploRotacionR();
 
-         */
-
         PasosJuego.ejerciciosRotacionR();
 
-        //PasosJuego.explicarRotacionL();
+        PasosJuego.espacio();
 
-        //PasosJuego.ejemploRotacionL();
+        PasosJuego.explicarRotacionL();
 
-        //PasosJuego.ejercicioRotacionL();
+        PasosJuego.ejemploRotacionL();
 
-        //PasosJuego.explicarRotacionRL();
+        PasosJuego.ejerciciosRotacionL();
+
+        PasosJuego.explicarRotacionRL();
+         */
 
         //PasosJuego.ejemploRotacionRL();
 
-        //PasosJuego.ejercicioRotacionRL();
+        //PasosJuego.ejerciciosRotacionRL();
 
         //PasosJuego.explicarRotacionLR();
 
         //PasosJuego.ejemploRotacionLR();
 
-        //PasosJuego.ejercicioRotacionLR();
+        //PasosJuego.ejerciciosRotacionLR();
     }
 }
