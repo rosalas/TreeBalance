@@ -58,11 +58,11 @@ public class Main {
         PasosJuego.ejemploAVL();
 
         PasosJuego.ejerciciosAVL();
-         */
 
         PasosJuego.espacio();
 
-        //PasosJuego.explicarRotaciones();
+        PasosJuego.explicarRotaciones();
+         */
 
         //PasosJuego.ejemploRotaciones();
 

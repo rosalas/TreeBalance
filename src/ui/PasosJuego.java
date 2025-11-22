@@ -62,6 +62,7 @@ public class PasosJuego {
                 "inserción, búsqueda y eliminación.\n\n" +
                 "(Presiona la tecla Enter para continuar leyendo)");
         entrada.readLine();
+        esperar(1);
         System.out.print("\nTodo ABB debe obedecer las siguientes reglas:\n\n" +
                 "1) Cada uno de sus nodos (es decir, los elementos que\n" +
                 "almacena) debe tener una llave \uD83D\uDD11 única e irrepetible.\n" +
@@ -617,6 +618,52 @@ public class PasosJuego {
         }
         System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
                 "(Presiona la tecla Enter para continuar aprendiendo)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void explicarRotaciones() throws IOException {
+        System.out.print("\n\n\uD83D\uDCBB Rotaciones en un árbol AVL \uD83D\uDCBB\n\n" +
+                "Una vez que se detecta un desbalance mayor al permitido,\n" +
+                "la forma de corregir el defecto, como ya se indicó, consiste\n" +
+                "en la realización de una o más rotaciones. Hay cuatro tipos\n" +
+                "distintos de rotaciones que se puede llevar a cabo, debido a\n" +
+                "que hay también cuatro formas distintas de desbalances que se\n" +
+                "pueden presentar:\n\n" +
+                "1) Desbalance izquierdo-izquierdo: hay un nodo desbalanceado\n" +
+                "hacia la izquierda, cuyo hijo izquierdo también está desbalanceado\n" +
+                "hacia la izquierda; es decir, el nodo tiene FB de +2 y su hijo izquierdo de +1.\n" +
+                "Este tipo de desbalance se corrige con una rotación derecha sobre el\n" +
+                "nodo en el que se detectó el desbalance prohibido originalmente ↩\uFE0F\n\n" +
+                "(Presiona la tecla Enter para continuar leyendo)");
+        entrada.readLine();
+        esperar(1);
+        System.out.print("\n2) Desbalance izquierdo-derecho: hay un nodo desbalanceado hacia\n" +
+                "la izquierda, pero su hijo izquierdo está desbalanceado hacia la\n" +
+                "derecha; es decir, el nodo tiene FB de +2 y su hijo izquierdo de -1.\n" +
+                "Este tipo de desbalance se corrige con una rotación izquierda sobre el\n" +
+                "hijo izquierdo del nodo en el que se detectó el desbalance prohibido\n" +
+                "originalmente, seguida de una rotación derecha sobre el nodo en el que\n" +
+                "se detectó el desbalance prohibido originalmente ↪\uFE0F↩\uFE0F\n\n" +
+                "(Presiona la tecla Enter para continuar leyendo)");
+        entrada.readLine();
+        esperar(1);
+        System.out.print("\n3) Desbalance derecho-izquierdo: hay un nodo desbalanceado hacia\n" +
+                "la derecha, pero su hijo derecho está desbalanceado hacia la\n" +
+                "la izquierda; es decir, el nodo tiene FB de -2 y su hijo derecho de +1.\n" +
+                "Este tipo de desbalance se corrige con una rotación derecha sobre el\n" +
+                "hijo derecho del nodo en el que se detectó el desbalance prohibido\n" +
+                "originalmente, seguida de una rotación izquierda sobre el nodo en el que\n" +
+                "se detectó el desbalance prohibido originalmente ↩\uFE0F↪\uFE0F\n\n" +
+                "(Presiona la tecla Enter para continuar leyendo)");
+        entrada.readLine();
+        esperar(1);
+        System.out.print("\n4) Desbalance derecho-derecho: hay un nodo desbalanceado\n" +
+                "hacia la derecha, cuyo hijo derecho también está desbalanceado\n" +
+                "hacia la derecha; es decir, el nodo tiene FB de -2 y su hijo derecho de -1.\n" +
+                "Este tipo de desbalance se corrige con una rotación izquierda sobre el\n" +
+                "nodo en el que se detectó el desbalance prohibido originalmente ↪\uFE0F\n\n" +
+                "(Presiona la tecla Enter para ver un ejemplo de cada tipo de desbalance)");
         entrada.readLine();
         esperar(5);
     }
