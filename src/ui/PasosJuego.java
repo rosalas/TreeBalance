@@ -1105,6 +1105,52 @@ public class PasosJuego {
         esperar(5);
     }
 
+    public static void ejemploRotacionRL() throws IOException {
+        System.out.print("\nVamos a construir un pequeño ABB desbalanceado de forma derecha-izquierda:\n" +
+                "50, 75 y 60.\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        ABB arbolEjemplo = new ABB();
+        arbolEjemplo.insertar(50);
+        arbolEjemplo.insertar(75);
+        arbolEjemplo.insertar(60);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nLa corrección del árbol requiere primero una rotación derecha simple.\n" +
+                "El nodo de llave 60, hijo izquierdo del nodo de llave 75, debe convertirse en su padre,\n" +
+                "mientras que el nodo de llave 75 pasa a ser su hijo derecho.\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.eliminar(75);
+        arbolEjemplo.insertar(75);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nUna vez corregido el desbalance en la descendencia\n" +
+                "derecha del nodo que originalmente estaba desbalanceado, aplicarle\n" +
+                "a él una rotación izquierda finaliza la corrección del defecto.\n" +
+                "El árbol original tenía un FB de -2 y termina con uno de 0 \uD83D\uDE01\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.eliminar(50);
+        arbolEjemplo.insertar(50);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\n(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
+        entrada.readLine();
+        esperar(5);
+    }
+
     public static void explicarRotacionLR() throws IOException {
         System.out.print("\n\n\uD83D\uDCBB Rotación izquierda-derecha \uD83D\uDCBB\n\n" +
                 "Cuando se debe hacer una rotación izquierda-derecha sobre un nodo\n" +
@@ -1113,6 +1159,52 @@ public class PasosJuego {
                 "del nodo desbalanceado. Una vez hecho eso, se debe realizar\n" +
                 "una rotación derecha sobre el nodo desbalanceado.\n" +
                 "(Presiona la tecla Enter para ver un ejemplo \uD83D\uDC41\uFE0F)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void ejemploRotacionLR() throws IOException {
+        System.out.print("\nVamos a construir un pequeño ABB desbalanceado de forma izquierda-derecha:\n" +
+                "30, 20 y 25.\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        ABB arbolEjemplo = new ABB();
+        arbolEjemplo.insertar(30);
+        arbolEjemplo.insertar(20);
+        arbolEjemplo.insertar(25);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nLa corrección del árbol requiere primero una rotación izquierda simple.\n" +
+                "El nodo de llave 25, hijo derecho del nodo de llave 20, debe convertirse en su padre,\n" +
+                "mientras que el nodo de llave 20 pasa a ser su hijo izquierdo.\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.eliminar(20);
+        arbolEjemplo.insertar(20);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nUna vez corregido el desbalance en la descendencia\n" +
+                "izquierda del nodo que originalmente estaba desbalanceado, aplicarle\n" +
+                "a él una rotación derecha finaliza la corrección del defecto.\n" +
+                "El árbol original tenía un FB de 2 y termina con uno de 0 \uD83D\uDE01\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.eliminar(30);
+        arbolEjemplo.insertar(30);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\n(Presiona la tecla Enter para practicar lo aprendido \uD83D\uDCAA)");
         entrada.readLine();
         esperar(5);
     }

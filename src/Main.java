@@ -85,9 +85,9 @@ public class Main {
         PasosJuego.ejerciciosRotacionL();
 
         PasosJuego.explicarRotacionRL();
-         */
 
-        //PasosJuego.ejemploRotacionRL();
+        PasosJuego.ejemploRotacionRL();
+         */
 
         //PasosJuego.ejerciciosRotacionRL();
 
