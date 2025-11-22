@@ -51,8 +51,23 @@ public class Main {
         PasosJuego.ejerciciosFB();
 
         PasosJuego.espacio();
-         */
 
         //Etapa 4: Algoritmos del árbol AVL.
+        PasosJuego.explicarAVL();
+
+        PasosJuego.ejemploAVL();
+
+        PasosJuego.ejerciciosAVL();
+         */
+
+        PasosJuego.espacio();
+
+        //PasosJuego.explicarRotaciones();
+
+        //PasosJuego.ejemploRotaciones();
+
+        //PasosJuego.ejerciciosRotaciones();
+
+        PasosJuego.espacio();
     }
 }

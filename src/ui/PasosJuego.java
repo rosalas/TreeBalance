@@ -79,7 +79,7 @@ public class PasosJuego {
                 "5) No puede haber redundancia de caminos \uD83D\uDEE3\uFE0F (o sea, debe\n" +
                 "haber un único camino desde cualquier nodo hasta cualquier otro.)\n\n" +
                 "¿Lo entiendes? \uD83D\uDE04\n" +
-                "(Presiona la tecla Enter para ver un ejemplo gráfico)");
+                "(Presiona la tecla Enter para ver un ejemplo)");
         entrada.readLine();
         esperar(5);
     }
@@ -116,7 +116,7 @@ public class PasosJuego {
 
     public static void ejerciciosABB() throws IOException {
         System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de ABBs \uD83C\uDFCB\uFE0F\n\n" +
-                "¿Estás list@ para un ejercicio? \uD83D\uDC40\n" +
+                "¿Estás list@ para unos ejercicios? \uD83D\uDC40\n" +
                 "(Presiona la tecla Enter para comenzar)");
         entrada.readLine();
         ABB arbolEjercicios = new ABB();
@@ -175,6 +175,10 @@ public class PasosJuego {
                 esperar(3);
             }
         }
+        System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
+                "(Presiona la tecla Enter para continuar aprendiendo)");
+        entrada.readLine();
+        esperar(5);
     }
 
     public static void explicarDesbalance() throws IOException {
@@ -186,7 +190,7 @@ public class PasosJuego {
                 "nodos de un lado del nodo que del otro, lo cual se\n" +
                 "manifiesta a través de una diferencia en la altura de\n" +
                 "su hijo izquierdo y su hijo derecho.\n" +
-                "(Presiona la tecla Enter para ver un ejemplo gráfico)");
+                "(Presiona la tecla Enter para ver un ejemplo)");
         entrada.readLine();
         esperar(5);
     }
@@ -238,7 +242,8 @@ public class PasosJuego {
                 "o eliminación de un nodo.\n" +
                 "La regla principal de un AVL, en cuya evaluación se basa su capacidad\n" +
                 "de autobalancearse, es que ningún nodo puede tener un factor de\n" +
-                "balance (FB) menor que -1 o mayor que +1.\n" +
+                "balance (FB) menor que o mayor que el permitido.\n" +
+                "balance (FB) menor que o mayor que el permitido.\n" +
                 "A continuación, vamos a aprender sobre el FB y la altura de los nodos.\n" +
                 "(Presiona la tecla Enter para seguir aprendiendo)");
         entrada.readLine();
@@ -310,7 +315,7 @@ public class PasosJuego {
 
     public static void ejerciciosAltura() throws IOException {
         System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de ABBs \uD83C\uDFCB\uFE0F\n\n" +
-                "¿Estás list@ para un ejercicio? \uD83D\uDC40\n" +
+                "¿Estás list@ para unos ejercicios? \uD83D\uDC40\n" +
                 "(Presiona la tecla Enter para comenzar)");
         entrada.readLine();
         ABB arbolEjercicios = new ABB();
@@ -366,6 +371,10 @@ public class PasosJuego {
                 esperar(3);
             }
         }
+        System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
+                "(Presiona la tecla Enter para continuar aprendiendo)");
+        entrada.readLine();
+        esperar(5);
     }
 
     public static void explicarFB() throws IOException {
@@ -376,7 +385,7 @@ public class PasosJuego {
                 "su hijo derecho \uD83D\uDE04\n\n" +
                 "FB = h_izquierda - h_derecha\n\n" +
                 "Como se calcula mediante la resta de números que siempre son" +
-                "(Presiona la tecla Enter para practicar lo aprendido)");
+                "(Presiona la tecla Enter para ver un ejemplo)");
         entrada.readLine();
         esperar(5);
     }
@@ -412,14 +421,14 @@ public class PasosJuego {
                 "El nodo de llave 80, por otra parte, tiene un FB de -2 (es decir, está\n" +
                 "desbalanceado hacia la derecha), mientras que el de llave 15 tiene un FB\n" +
                 "de 1 (desbalance izquierdo).\n" +
-                "(Presiona la tecla Enter para continuar aprendiendo)");
+                "(Presiona la tecla Enter para practicar lo aprendido)");
         entrada.readLine();
         esperar(5);
     }
 
     public static void ejerciciosFB() throws IOException {
         System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de FB \uD83C\uDFCB\uFE0F\n\n" +
-                "¿Estás list@ para un ejercicio? \uD83D\uDC40\n" +
+                "¿Estás list@ para unos ejercicios? \uD83D\uDC40\n" +
                 "(Presiona la tecla Enter para comenzar)");
         entrada.readLine();
         ABB arbolEjercicios = new ABB();
@@ -475,5 +484,140 @@ public class PasosJuego {
                 esperar(3);
             }
         }
+        System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
+                "(Presiona la tecla Enter para continuar aprendiendo)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void explicarAVL() throws IOException {
+        System.out.print("\n\n\uD83D\uDCBB Regla de balance de un árbol AVL \uD83D\uDCBB\n\n" +
+                "Conociendo ahora el concepto de FB, es posible terminar de\n" +
+                "definir el árbol AVL. La característica principal de un\n" +
+                "árbol AVL es que no permite ningún factor de balance menor\n" +
+                "que -1 ni mayor que +1. En otras palabras, siempre que se\n" +
+                "inserta o se elimina un nodo de dicha estructura, se debe\n" +
+                "evaluar si los nodos desde la raíz hasta la posición afectada\n" +
+                "están bien balanceados; si no lo están, se debe ejecutar una o\n" +
+                "más rotaciones para corregir el desbalance del árbol ✏\uFE0F\n" +
+                "(Presiona la tecla Enter para ver un ejemplo)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void ejemploAVL() throws IOException {
+        System.out.print("\nVamos a construir un ABB perfectamente balanceado con las siguientes llaves:\n" +
+                "25, 12, 28, 6, 15, 26 y 30.\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        ABB arbolEjemplo = new ABB();
+        arbolEjemplo.insertar(25);
+        arbolEjemplo.insertar(12);
+        arbolEjemplo.insertar(28);
+        arbolEjemplo.insertar(6);
+        arbolEjemplo.insertar(15);
+        arbolEjemplo.insertar(26);
+        arbolEjemplo.insertar(30);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nEl árbol anterior está perfectamente balanceado.\n" +
+                "Sin embargo, si se inserta un nodo con llave 17, aparece un\n" +
+                "pequeño desbalance \uD83D\uDE1E\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.insertar(17);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nSin embargo, el desbalance que hay en el árbol\n" +
+                "de momento sigue siendo permitido (es decir, la raíz tiene un\n" +
+                "desbalance de +1 y el nodo de llave 15 tiene un desbalance de\n" +
+                "-1, pero ambos valores son permitidos) \uD83D\uDE01\n" +
+                "No obstante, si se inserta además un nodo con llave 16...\n" +
+                "(Presiona la tecla Enter para visualizar el árbol \uD83C\uDF32)");
+        entrada.readLine();
+        esperar(1);
+        arbolEjemplo.insertar(16);
+        System.out.println("\n");
+        arbolEjemplo.imprimirArbolPiramide();
+        System.out.print("\n\nAhora, la raíz del árbol y el nodo de llave 15 tienen\n" +
+                "un desbalance no permitido \uD83D\uDE45 (de +2 y -2 respectivamente).\n" +
+                "Será necesario aplicar rotaciones para corregir la estructura ♻\uFE0F\n" +
+                "(Presiona la tecla Enter para practicar lo aprendido)");
+        entrada.readLine();
+        esperar(5);
+    }
+
+    public static void ejerciciosAVL() throws IOException {
+        System.out.print("\n\n\uD83C\uDFCB\uFE0F Ejercicios de AVL \uD83C\uDFCB\uFE0F\n\n" +
+                "¿Estás list@ para unos ejercicios? \uD83D\uDC40\n" +
+                "(Presiona la tecla Enter para comenzar)");
+        entrada.readLine();
+        ABB arbolEjercicios = new ABB();
+        arbolEjercicios.insertar(20);
+        arbolEjercicios.insertar(5);
+        arbolEjercicios.insertar(50);
+        arbolEjercicios.insertar(10);
+        arbolEjercicios.insertar(70);
+        arbolEjercicios.insertar(60);
+        for (int c = 2; c >= 0; --c) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Lo sentimos, sucedió algo inesperado.");
+            }
+            System.out.println((c + 1) + "...");
+        }
+        esperar(1);
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        int respuesta;
+        while (true) {
+            System.out.print("\nPregunta 1: ¿Cuál es la llave de un nodo cuya inserción\n" +
+                    "dejaría la estructura con un desbalance prohibido?\n\n" +
+                    "1) 1\n" +
+                    "2) 40\n" +
+                    "3) 55\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 3) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.println("\n");
+        arbolEjercicios.imprimirArbolPiramide();
+        while (true) {
+            System.out.print("\nPregunta 2: ¿Cuál es la llave de un nodo cuya eliminación\n" +
+                    "dejaría la estructura con un desbalance prohibido?\n\n" +
+                    "1) El de llave 20\n" +
+                    "2) El de llave 50\n" +
+                    "3) El de llave 10\n\n" +
+                    "Respuesta: ");
+            respuesta = Integer.parseInt(entrada.readLine());
+            if (respuesta == 3) {
+                System.out.println("\n\n✔\uFE0F ¡Correcto!");
+                break;
+            } else {
+                System.out.println("\n\n❌ Incorrecto. Piénsalo mejor...");
+                esperar(3);
+            }
+        }
+        System.out.print("¡Excelente trabajo! \uD83D\uDCAF\n" +
+                "(Presiona la tecla Enter para continuar aprendiendo)");
+        entrada.readLine();
+        esperar(5);
     }
 }
